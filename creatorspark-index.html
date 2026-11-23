@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101426">
+<title>CreatorSpark — Video Script Studio</title>
+<style>
+:root{--bg:#0b1020;--panel:#151f35;--line:#33415f;--text:#f2f5ff;--muted:#a5b1cc;--green:#c4f66d;--purple:#b8a2ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#473a8230,transparent 35%),var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{position:sticky;top:0;background:#0b1020ed;border-bottom:1px solid #ffffff18;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.brand{font-size:19px;font-weight:900}.brand b{background:var(--green);color:#17200c;padding:6px 10px;border-radius:10px;margin-right:8px}.badge{font-size:11px;color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:30px}
+main{max-width:1200px;margin:auto;padding:30px 20px 55px}.hero{margin:10px 0 25px}.eyebrow{color:var(--green);font-weight:800;letter-spacing:2px;font-size:11px}.hero h1{font-size:clamp(32px,5vw,48px);line-height:1.08;letter-spacing:-1.5px;margin:9px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);max-width:720px}
+.grid{display:grid;grid-template-columns:370px 1fr;gap:18px;align-items:start}.panel{background:linear-gradient(145deg,#18233b,#11192b);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 15px 45px #0004}.form{position:sticky;top:75px}.panel h2{font-size:17px;margin:0 0 15px}.field{margin-bottom:13px}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px;color:#d9e2f6}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;background:#0d1426;color:var(--text);padding:11px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}textarea{min-height:75px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hint,.muted{font-size:11px;color:var(--muted)}button{cursor:pointer}.primary{width:100%;border:0;border-radius:10px;background:var(--green);color:#18210c;font-weight:900;padding:13px}.secondary{border:1px solid var(--line);border-radius:9px;background:#ffffff0b;color:var(--text);padding:9px 12px;font-weight:700}.outputhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid #ffffff18;padding-bottom:13px;margin-bottom:14px}.actions{display:flex;gap:7px}.empty{min-height:430px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:30px}.empty strong{display:block;color:var(--text);font-size:18px;margin-bottom:6px}.cards{display:grid;gap:12px}.card{background:#0d1528;border:1px solid #2b3957;border-radius:12px;padding:14px}.card h3{color:var(--green);font-size:12px;margin:0 0 8px;display:flex;justify-content:space-between;gap:10px}.card p{margin:0;white-space:pre-wrap;font-size:14px}.copyone{font-size:10px;background:#ffffff0b;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 7px}.notice{margin-top:15px;border:1px solid #81e5e833;background:#81e5e80d;border-radius:10px;padding:11px;color:#c7ebef;font-size:11px}.credit{text-align:center;color:#8d9ab5;font-size:12px;padding:26px 0 0}.credit b{color:#dce6fb}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.form{position:static}}@media(max-width:520px){main{padding:22px 12px}.panel{padding:15px}.row{grid-template-columns:1fr}.badge{display:none}}
+</style>
+</head>
+<body>
+<header><div class="brand"><b>✦</b>CreatorSpark</div><div class="badge">Multilingual · Audience-aware</div></header>
+<main>
+<section class="hero"><div class="eyebrow">YOUR IDEA → A VIDEO PLAN</div><h1>Make every video<br><span>worth watching.</span></h1><p>Create a structured video script for your niche, language, format and audience — including hooks, scene directions, titles, thumbnails and realistic creator-growth ideas.</p></section>
+<div class="grid">
+<section class="panel form">
+<h2>✦ Build your script</h2>
+<form id="form">
+<div class="field"><label for="topic">Video topic or idea *</label><input id="topic" required maxlength="180" placeholder="Example: 7 useful phone settings most people miss"></div>
+<div class="row">
+<div class="field"><label for="language">Script language</label><select id="language"><option value="en">English</option><option value="bn">বাংলা (Bangla)</option><option value="hi">हिन्दी (Hindi)</option><option value="ur">اردو (Urdu)</option><option value="ar">العربية</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="id">Bahasa Indonesia</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="tr">Türkçe</option><option value="other">Other language</option></select></div>
+<div class="field"><label for="niche">Creator niche</label><select id="niche"><option>Education & learning</option><option>Technology & gadgets</option><option>Gaming</option><option>Entertainment & comedy</option><option>Daily life & vlogging</option><option>Food & cooking</option><option>Travel & culture</option><option>Science & facts</option><option>History & documentary</option><option>Books & literature</option><option>Art & design</option><option>Music</option><option>Sports</option><option>Fitness & wellbeing</option><option>Personal finance education</option><option>Business</option><option>Career & productivity</option><option>Parenting & family</option><option>DIY & crafts</option><option>Beauty & personal care</option><option>Cars & transport</option><option>Nature & environment</option><option>News & commentary</option><option>Faith & inspiration</option><option>Photography & filmmaking</option><option>Creator education</option><option>Other / mixed</option></select></div></div>
+<div class="field"><label for="format">Content format</label><select id="format"><option>Short video (Shorts / Reels)</option><option>Explainer</option><option>Step-by-step tutorial</option><option>List / Top tips</option><option>Storytime</option><option>Mini documentary</option><option>Review / comparison</option><option>Vlog</option><option>Gaming walkthrough</option><option>Podcast / interview</option><option>Case study</option><option>News / update</option><option>Educational lesson</option><option>Product or project demo</option><option>Livestream outline</option><option>Recipe / cooking</option></select></div>
+<div class="row">
+<div class="field"><label for="audience">Target audience</label><select id="audience"><option value="general">General viewers</option><option value="beginners">Beginners</option><option value="students">Students / learners</option><option value="enthusiasts">Hobbyists / fans</option><option value="professionals">Professionals</option><option value="business">Small business owners</option><option value="parents">Parents / families</option><option value="advanced">Advanced learners</option><option value="gamers">Gamers</option><option value="creators">Content creators</option></select></div>
+<div class="field"><label for="goal">Main goal</label><select id="goal"><option>Reach & discoverability</option><option>Teach something useful</option><option>Build community</option><option>Build audience trust</option><option>Showcase a skill</option><option>Promote a project</option></select></div></div>
+<div class="row">
+<div class="field"><label for="duration">Target length</label><select id="duration"><option value="30">30 seconds</option><option value="60" selected>60 seconds</option><option value="180">3 minutes</option><option value="300">5 minutes</option><option value="600">10 minutes</option><option value="900">15 minutes</option></select></div>
+<div class="field"><label for="tone">Delivery style</label><select id="tone"><option>Friendly & clear</option><option>Energetic</option><option>Story-driven</option><option>Confident & informative</option><option>Playful & humorous</option><option>Calm & thoughtful</option><option>Cinematic</option></select></div></div>
+<div class="field"><label for="points">Key points to include (optional)</label><textarea id="points" placeholder="Add facts, steps, examples or questions. One point per line."></textarea></div>
+<div class="field"><label for="cta">Your preferred call to action (optional)</label><input id="cta" placeholder="Example: Tell me your favourite tip in comments"></div>
+<div class="field" id="customWrap" hidden><label for="customLang">Other language name</label><input id="customLang" placeholder="Example: Nepali, Swahili, Italian"></div>
+<button class="primary" id="generate">✦ Generate my creator script</button>
+<p class="hint">Runs locally in your browser. No API key required.</p>
+</form>
+</section>
+<section class="panel">
+<div class="outputhead"><div><h2 style="margin:0">Your creator blueprint</h2><div class="muted" id="sub">Your script and publishing plan will appear here.</div></div><div class="actions"><button class="secondary" id="copy" disabled>Copy all</button><button class="secondary" id="download" disabled>Download .txt</button></div></div>
+<div class="empty" id="empty"><div><strong>Your next video starts here</strong>Choose your topic, language and audience, then generate a script.</div></div>
+<div class="cards" id="results" hidden></div>
+<div class="notice">No tool can guarantee views or earnings. Treat growth and revenue suggestions as ideas, check current platform eligibility rules, verify facts and respect copyright. For creator accounts, payments, sponsorships or contracts, involve a parent or guardian where required.</div>
+</section>
+</div>
+<div class="credit">Made by <b>Minhazur Rahman Mahin</b> · CreatorSpark</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const translations={
+en:{hook:"HOOK",intro:"INTRODUCTION",scene:"SCENE",outro:"OUTRO & CALL TO ACTION",titles:"TITLE IDEAS",description:"VIDEO DESCRIPTION",tags:"SEARCH PHRASES & TAGS",thumb:"THUMBNAIL CONCEPT",retention:"AUDIENCE RETENTION PLAN",growth:"DISCOVERY & GROWTH CHECKLIST",income:"POSSIBLE CREATOR REVENUE PATHS",first:"The first key idea is",next:"Now let's look at",cta:"If this helped, share your thoughts in the comments and subscribe for more useful videos."},
+bn:{hook:"শুরুর আকর্ষণ",intro:"ভূমিকা",scene:"দৃশ্য",outro:"শেষ কথা ও আহ্বান",titles:"ভিডিওর শিরোনাম",description:"ভিডিওর বিবরণ",tags:"সার্চ শব্দ ও ট্যাগ",thumb:"থাম্বনেইল ধারণা",retention:"দর্শক ধরে রাখার পরিকল্পনা",growth:"দর্শক বাড়ানোর পরিকল্পনা",income:"আয়ের সম্ভাব্য পথ",first:"প্রথম গুরুত্বপূর্ণ বিষয়টি হলো",next:"এবার দেখা যাক",cta:"ভিডিওটি কাজে লাগলে আপনার মতামত কমেন্টে জানান এবং আরও ভিডিও পেতে সাবস্ক্রাইব করুন।"},
+hi:{hook:"शुरुआती आकर्षण",intro:"परिचय",scene:"दृश्य",outro:"समापन और आह्वान",titles:"वीडियो शीर्षक",description:"वीडियो विवरण",tags:"खोज शब्द और टैग",thumb:"थंबनेल का विचार",retention:"दर्शकों को बनाए रखने की योजना",growth:"विकास और खोज योजना",income:"संभावित कमाई के रास्ते",first:"पहला महत्वपूर्ण विचार है",next:"अब देखते हैं",cta:"वीडियो उपयोगी लगा हो तो अपनी राय कमेंट में लिखें और ऐसे ही वीडियो के लिए सब्सक्राइब करें।"},
+ur:{hook:"ابتدائی دلچسپی",intro:"تعارف",scene:"منظر",outro:"اختتام اور دعوت",titles:"ویڈیو کے عنوانات",description:"ویڈیو کی تفصیل",tags:"تلاش کے الفاظ اور ٹیگز",thumb:"تھمب نیل کا تصور",retention:"ناظرین کو برقرار رکھنے کا منصوبہ",growth:"دریافت اور ترقی کی تجاویز",income:"ممکنہ آمدنی کے راستے",first:"پہلا اہم نکتہ ہے",next:"اب بات کرتے ہیں",cta:"اگر ویڈیو مفید لگی تو اپنی رائے تبصرے میں بتائیں اور مزید ویڈیوز کے لیے سبسکرائب کریں۔"},
+ar:{hook:"افتتاحية جذابة",intro:"المقدمة",scene:"المشهد",outro:"الخاتمة والدعوة",titles:"عناوين الفيديو",description:"وصف الفيديو",tags:"عبارات البحث والوسوم",thumb:"فكرة الصورة المصغرة",retention:"خطة الاحتفاظ بالمشاهد",growth:"خطة الوصول والنمو",income:"مسارات دخل محتملة",first:"الفكرة الأساسية الأولى هي",next:"لننتقل الآن إلى",cta:"إذا كان الفيديو مفيداً، شارك رأيك في التعليقات واشترك للمزيد."},
+es:{hook:"GANCHO INICIAL",intro:"INTRODUCCIÓN",scene:"ESCENA",outro:"CIERRE Y LLAMADA A LA ACCIÓN",titles:"IDEAS DE TÍTULO",description:"DESCRIPCIÓN",tags:"BÚSQUEDAS Y ETIQUETAS",thumb:"IDEA DE MINIATURA",retention:"PLAN DE RETENCIÓN",growth:"PLAN DE CRECIMIENTO",income:"POSIBLES VÍAS DE INGRESOS",first:"La primera idea clave es",next:"Ahora veamos",cta:"Si te resultó útil, comparte tu opinión en los comentarios y suscríbete para ver más contenido."},
+pt:{hook:"GANCHO INICIAL",intro:"INTRODUÇÃO",scene:"CENA",outro:"ENCERRAMENTO E CHAMADA",titles:"IDEIAS DE TÍTULO",description:"DESCRIÇÃO DO VÍDEO",tags:"TERMOS DE BUSCA E TAGS",thumb:"IDEIA DE MINIATURA",retention:"PLANO DE RETENÇÃO",growth:"PLANO DE CRESCIMENTO",income:"POSSÍVEIS FONTES DE RENDA",first:"A primeira ideia principal é",next:"Agora vamos ver",cta:"Se este vídeo ajudou, deixe sua opinião nos comentários e inscreva-se para mais conteúdo."},
+fr:{hook:"ACCROCHE",intro:"INTRODUCTION",scene:"SCÈNE",outro:"CONCLUSION ET APPEL À L’ACTION",titles:"IDÉES DE TITRES",description:"DESCRIPTION",tags:"RECHERCHES ET TAGS",thumb:"IDÉE DE MINIATURE",retention:"PLAN DE RÉTENTION",growth:"PLAN DE CROISSANCE",income:"PISTES DE REVENUS POSSIBLES",first:"La première idée importante est",next:"Voyons maintenant",cta:"Si cette vidéo vous a aidé, partagez votre avis en commentaire et abonnez-vous pour la suite."},
+de:{hook:"EINSTIEG",intro:"EINFÜHRUNG",scene:"SZENE",outro:"ABSCHLUSS UND AUFRUF",titles:"TITELIDEEN",description:"VIDEOBESCHREIBUNG",tags:"SUCHBEGRIFFE UND TAGS",thumb:"THUMBNAIL-IDEE",retention:"PLAN FÜR ZUSCHAUERBINDUNG",growth:"REICHWEITE UND WACHSTUM",income:"MÖGLICHE EINNAHMEWEGE",first:"Der erste wichtige Punkt ist",next:"Schauen wir uns jetzt an",cta:"Wenn dir das Video geholfen hat, teile deine Meinung in den Kommentaren und abonniere für weitere Inhalte."},
+id:{hook:"PEMBUKA MENARIK",intro:"PEMBUKAAN",scene:"ADEGAN",outro:"PENUTUP DAN AJAKAN",titles:"IDE JUDUL",description:"DESKRIPSI VIDEO",tags:"KATA KUNCI DAN TAG",thumb:"IDE THUMBNAIL",retention:"RENCANA RETENSI PENONTON",growth:"RENCANA PERTUMBUHAN",income:"POTENSI JALUR PENDAPATAN",first:"Ide utama pertama adalah",next:"Sekarang mari kita lihat",cta:"Jika video ini bermanfaat, tulis pendapatmu di komentar dan berlangganan untuk konten berikutnya."},
+ja:{hook:"冒頭のフック",intro:"導入",scene:"シーン",outro:"まとめ・行動の呼びかけ",titles:"タイトル案",description:"動画の説明",tags:"検索キーワード・タグ",thumb:"サムネイル案",retention:"視聴維持プラン",growth:"発見・成長プラン",income:"考えられる収益方法",first:"最初の大切なポイントは",next:"次に見ていきましょう",cta:"役に立ったらコメントで感想を教えてください。次の動画を見るにはチャンネル登録もお願いします。"},
+ko:{hook:"초반 후킹",intro:"도입",scene:"장면",outro:"마무리 및 행동 유도",titles:"제목 아이디어",description:"영상 설명",tags:"검색어 및 태그",thumb:"썸네일 아이디어",retention:"시청 지속 시간 계획",growth:"발견 및 성장 계획",income:"가능한 수익 경로",first:"첫 번째 핵심 내용은",next:"이제 살펴볼 것은",cta:"도움이 되었다면 댓글로 의견을 남겨 주세요. 더 많은 영상을 보려면 구독해 주세요."},
+tr:{hook:"AÇILIŞ KANCASI",intro:"GİRİŞ",scene:"SAHNE",outro:"KAPANIŞ VE ÇAĞRI",titles:"BAŞLIK ÖNERİLERİ",description:"VİDEO AÇIKLAMASI",tags:"ARAMA TERİMLERİ VE ETİKETLER",thumb:"KÜÇÜK RESİM FİKRİ",retention:"İZLEYİCİYİ TUTMA PLANI",growth:"KEŞFEDİLME VE BÜYÜME PLANI",income:"OLASI GELİR YOLLARI",first:"İlk önemli fikir",next:"Şimdi şuna bakalım",cta:"Video faydalı olduysa yorumlarda fikrini paylaş ve yeni içerikler için abone ol."}
+};
+const audienceAdvice={
+general:"Keep examples relatable and explain technical terms.",
+beginners:"Define new terms simply and show one example before moving on.",
+students:"Use short explanations, recap the main points and include a quick knowledge check.",
+enthusiasts:"Add a deeper detail, behind-the-scenes angle and a question for fans.",
+professionals:"Focus on practical decisions, concise evidence and useful next steps.",
+business:"Use a real-world problem, explain the process and avoid unsupported income claims.",
+parents:"Keep advice practical, respectful and easy to apply as a family.",
+advanced:"Include nuance, limitations, sources and trade-offs.",
+gamers:"Show the objective early, explain the strategy and include a clear progress moment.",
+creators:"Show the workflow, a before/after example and one repeatable lesson."
+};
+const audienceNames={general:"general viewers",beginners:"beginners",students:"students and learners",enthusiasts:"fans and hobbyists",professionals:"working professionals",business:"small business owners",parents:"parents and families",advanced:"advanced learners",gamers:"gamers",creators:"content creators"};
+const visualByFormat={
+"Short video (Shorts / Reels)":"Use a quick close-up, bold captions and a visual change every few seconds.",
+"Step-by-step tutorial":"Show each step clearly before explaining the next one.",
+"Mini documentary":"Use dates, maps, source screenshots and relevant b-roll where permitted.",
+"Gaming walkthrough":"Show the objective, key decision and result in gameplay.",
+"Podcast / interview":"Open with the strongest answer, alternate speaker framing and use chapter cards.",
+"Recipe / cooking":"Show the finished dish first, then ingredients and clear process shots."
+};
+let fullText="";
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function build(){
+ const topic=$('topic').value.trim(),lang=$('language').value,custom=$('customLang').value.trim(),L=translations[lang]||translations.en;
+ const niche=$('niche').value,format=$('format').value,aud=$('audience').value,duration=+$('duration').value,points=$('points').value.split(/\n|[,;]/).map(x=>x.trim()).filter(Boolean);
+ const pts=points.length?points:[`what viewers should know about ${topic}`,`a practical example related to ${topic}`,`one common mistake or useful tip about ${topic}`];
+ const hookMap={
+ bn:`${topic} সম্পর্কে অনেকেই কিছুটা জানেন—কিন্তু একটি গুরুত্বপূর্ণ বিষয় পুরো ধারণা বদলে দিতে পারে। চলুন জেনে নেওয়া যাক।`,
+ hi:`${topic} के बारे में बहुत लोग जानते हैं—लेकिन एक अहम बात पूरी तस्वीर बदल सकती है। आइए समझते हैं।`,
+ en:`Most people think they know ${topic} — but one important detail can change the whole picture. Here's what to know.`
+ };
+ const introMap={
+ bn:`স্বাগতম। আজকের ভিডিওতে ${audienceNames[aud]}-এর জন্য ${topic} সহজ ও ব্যবহারিকভাবে আলোচনা করব, যাতে বিষয়টি বুঝে কাজে লাগাতে পারেন।`,
+ hi:`स्वागत है। आज हम ${audienceNames[aud]} के लिए ${topic} को आसान और व्यावहारिक तरीके से समझेंगे।`,
+ en:`Welcome. In this video, we're breaking down ${topic} for ${audienceNames[aud]}. I'll keep it clear, practical and focused on what you can use.`
+ };
+ const scriptSentences={
+ bn:["প্রথমে","এবার","এখানে সবচেয়ে জরুরি বিষয়টি বুঝিয়ে বলুন, একটি বাস্তব উদাহরণ দেখান এবং ফলাফল পরিষ্কার করুন।","একটি বাস্তব পরিস্থিতির সঙ্গে বিষয়টি মিলিয়ে দেখান।"],
+ hi:["सबसे पहले","अब","ज़रूरी बात समझाएँ, एक वास्तविक उदाहरण दिखाएँ और नतीजा साफ़ करें।","इसे किसी रोज़मर्रा की स्थिति से जोड़कर समझाएँ।"],
+ en:["Let's start with","Next,","Explain the important point, show a practical example and make the result clear.","Connect this to a real situation viewers recognise."]
+ };
+ const ss=scriptSentences[lang]||scriptSentences.en;
+ const hook=hookMap[lang]||`Here's something worth understanding about ${topic}: one clear example can change how you see it.`;
+ const intro=introMap[lang]||`Welcome. In this video, we'll explore ${topic} for ${audienceNames[aud]} with clear explanations and practical examples.`;
+ const n=Math.max(3,Math.min(7,Math.ceil(duration/100))),per=Math.round(duration/(n+2));
+ let scenes=[];
+ for(let i=0;i<n;i++){
+  const p=pts[i%pts.length],lead=i===0?ss[0]:ss[1];
+  scenes.push(`${L.scene} ${i+1}\nVisual direction: ${visualByFormat[format]||`Show a clear visual connected to ${topic}; add a close-up, graphic or real example.`}\nOn-screen text: ${p}\nNarration: ${lead} ${p}. ${ss[2]}\nTarget time: about ${per} seconds`);
+ }
+ const titles=lang==="bn"?[`${topic}: যা জানা জরুরি`,`${topic} সহজভাবে বুঝুন`,`এই বিষয়টি মিস করবেন না: ${topic}`]:lang==="hi"?[`${topic}: ज़रूरी बातें`,`${topic} आसान भाषा में`,`इस बारे में यह ज़रूर जानें: ${topic}`]:[`${topic}: What You Should Know`,`A Simple Guide to ${topic}`,`Before You Try ${topic}, Watch This`];
+ const desc=lang==="bn"?`এই ভিডিওতে ${topic} নিয়ে গুরুত্বপূর্ণ বিষয়, ব্যবহারিক উদাহরণ এবং কাজে লাগানো যায় এমন পরামর্শ তুলে ধরা হয়েছে।\n\nভিডিওটি ভালো লাগলে মতামত জানান। গুরুত্বপূর্ণ তথ্য নিজে যাচাই করুন।`:lang==="hi"?`इस वीडियो में ${topic} से जुड़े अहम विचार, व्यावहारिक उदाहरण और उपयोगी सुझाव दिए गए हैं।\n\nवीडियो पसंद आए तो अपनी राय साझा करें। महत्वपूर्ण जानकारी की जाँच करें।`:`In this video, we explore ${topic} with clear explanations, practical examples and useful takeaways.\n\nComment with the point you found most useful. Check important facts and sources before acting on advice.`;
+ const tags=[topic,niche,"how to","explained","tips"].map(x=>"#"+x.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,""));
+ const thumbnail=`Big readable text: “${topic}?” + one clear subject image + one visual focus. Use strong contrast and avoid misleading claims.`;
+ const retention=["0–3 sec: Show the result, question or an accurate surprising detail.","First 15%: Tell viewers what they will learn and why it matters.","Middle: Change visual, example or question every 20–40 seconds as appropriate.","Final 15%: Deliver the promised takeaway before the call to action."];
+ const growth=["Match the title and opening seconds to one specific viewer question.","Use a clear, readable thumbnail with one idea; avoid misleading promises.","Put the main search phrase naturally in the title and description. Avoid keyword stuffing.","After publishing, review impressions, click-through rate, average view duration and retention dips.","Make a follow-up from a real viewer question and improve one thing each upload."];
+ const revenue=["Platform ad-revenue programs, only when the channel and creator meet current eligibility rules.","Relevant sponsorships, with clear disclosure of paid partnerships.","Affiliate links, with clear disclosure and honest product evaluation.","Useful products or services such as templates, lessons or digital resources, where permitted.","Community memberships or viewer support, if available and appropriate."];
+ const cta=$('cta').value.trim()||L.cta;
+ const parts=[[L.hook,hook],[L.intro,intro],[L.scene,scenes.join("\n\n")],[L.outro,cta],[L.titles,titles.map((x,i)=>(i+1)+". "+x).join("\n")],[L.description,desc],[L.tags,tags.join(" ")],[L.thumb,thumbnail],[L.retention,retention.map((x,i)=>(i+1)+". "+x).join("\n")],[L.growth,growth.map((x,i)=>(i+1)+". "+x).join("\n")],[L.income,revenue.map((x,i)=>(i+1)+". "+x).join("\n")],["Audience fit & accuracy",audienceAdvice[aud]+"\n\nCheck facts, dates and quotations. Credit sources and use footage/music/images only when you have permission or a suitable licence."] ];
+ fullText=parts.map(x=>x[0]+"\n"+x[1]).join("\n\n");
+ $('results').innerHTML=parts.map((x,i)=>`<article class="card"><h3><span>${safe(x[0])}</span><button class="copyone" data-i="${i}">Copy</button></h3><p>${safe(x[1])}</p></article>`).join("");
+ $('results').hidden=false;$('empty').hidden=true;$('copy').disabled=false;$('download').disabled=false;
+ $('sub').textContent=`${niche} · ${custom||lang.toUpperCase()} · ${format} · ${audienceNames[aud]}`;
+ document.querySelectorAll('.copyone').forEach(b=>b.addEventListener('click',()=>copy(parts[+b.dataset.i].join("\n"),b)));
+ try{localStorage.setItem("creatorspark-last",JSON.stringify({topic,fullText}))}catch(e){}
+}
+function copy(text,button){const done=()=>{if(button){const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)}};if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(text).then(done).catch(()=>fallback(text,done));else fallback(text,done)}
+function fallback(text,done){const t=document.createElement("textarea");t.value=text;document.body.appendChild(t);t.select();try{document.execCommand("copy");done()}catch(e){alert("Copy was blocked. Please select and copy the text manually.")}t.remove()}
+$('language').addEventListener('change',()=>{$('customWrap').hidden=$('language').value!=="other"});
+$('form').addEventListener('submit',e=>{e.preventDefault();if($('language').value==="other"&&!$('customLang').value.trim()){alert("Enter your language name. The custom-language draft uses English starter text.");return}try{build()}catch(err){console.error(err);alert("Could not generate the script. Please try again.")}});
+$('copy').addEventListener('click',()=>copy(fullText,$('copy')));
+$('download').addEventListener('click',()=>{if(!fullText)return;const blob=new Blob([fullText],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="creatorspark-script.txt";a.click();URL.revokeObjectURL(url)});
+</script>
+</body>
+</html>
